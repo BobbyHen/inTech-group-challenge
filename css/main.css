@@ -1,10 +1,10 @@
 /* CSS reset */
+
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
-
 
 .container {
     max-width: 2130px;
@@ -12,8 +12,54 @@
     margin: auto;
 }
 
+.billboard {
+    display: grid;
+    background-color: red;
+    grid-row-gap: 20px;
+    grid-template: auto;
+}
+
+.message {
+    text-align: center;
+    padding: 15px;
+}
+
+.top-selling {
+    display: grid;
+}
+
+.top-selling>div {
+    text-align: center
+}
+
+
+/* visual aid tester*/
+
+.topselling>div:nth-child(odd) {
+    background: grey;
+}
+
+.item1 {
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.item2 {
+    display: grid;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.item3 {
+    display: grid;
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
 
 /* navigation styling rules*/
+
 nav {
     width: 100%;
     min-height: 153px;
@@ -22,6 +68,7 @@ nav {
 
 
 /* main styling rules*/
+
 main {
     min-height: 100vh;
     width: 100%;
@@ -42,8 +89,8 @@ main {
 }
 
 
-
 /* footer styling rules */
+
 footer {
     background-color: #223643;
     width: 100%;
