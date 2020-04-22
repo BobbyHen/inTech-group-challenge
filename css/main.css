@@ -6,14 +6,11 @@
 }
 
 
-
-
 .container {
     max-width: 2130px;
     height: inherit;
     margin: auto;
 }
-
 
 
 /* navigation styling rules*/
@@ -22,8 +19,6 @@ nav {
     min-height: 153px;
     border: dashed 3px red;
 }
-
-
 
 
 /* main styling rules*/
