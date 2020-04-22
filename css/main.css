@@ -14,29 +14,23 @@
 
 .billboard {
     display: grid;
-    background-color: red;
-    grid-row-gap: 20px;
-    grid-template: auto;
+    border: 10px solid green;
+    grid-row-gap: 10px;
+    grid-template: 30px;
 }
 
 .message {
     text-align: center;
-    padding: 15px;
 }
 
 .top-selling {
+    grid-row-start: 3;
+    grid-row-end: 6;
     display: grid;
 }
 
 .top-selling>div {
     text-align: center
-}
-
-
-/* visual aid tester*/
-
-.topselling>div:nth-child(odd) {
-    background: grey;
 }
 
 .item1 {
