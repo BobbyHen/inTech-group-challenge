@@ -12,6 +12,9 @@
     margin: auto;
 }
 
+
+/* the main containner for div message & top sellers */
+
 .billboard {
     display: grid;
     border: 10px solid green;
@@ -23,32 +26,79 @@
     text-align: center;
 }
 
-.top-selling {
+
+/* the board for the top selling items */
+
+.top-sellers {
     grid-row-start: 3;
     grid-row-end: 6;
     display: grid;
 }
 
-.top-selling>div {
-    text-align: center
+.top-sellers>div {
+    text-align: right;
+    grid-row: center;
 }
 
-.item1 {
+
+/* the top 3 items 
+
+.items {
+    background-color: purple;
+}
+
+*/
+
+#item1 {
     display: grid;
+    grid-template-areas: 'name name name name name' 'img img img words words' 'img img img words words' 'img img img myAnk myAnk';
     grid-column-start: 1;
     grid-column-end: 2;
 }
 
-.item2 {
+#item2 {
     display: grid;
+    grid-template-areas: 'name name name name name' 'img img img words words' 'img img img words words' 'img img img myAnk myAnk';
     grid-column-start: 2;
     grid-column-end: 3;
 }
 
-.item3 {
+#item3 {
     display: grid;
+    grid-template-areas: 'name name name name name' 'img img img words words' 'img img img words words' 'img img img myAnk myAnk';
     grid-column-start: 3;
     grid-column-end: 4;
+}
+
+
+/* elements within the items containers */
+
+
+/* the anchor tag styles for the items container */
+
+.ank {
+    grid-area: "myAnk myAnk";
+}
+
+
+/* the img tag styles for the items container */
+
+.bImg {
+    grid-area: "img";
+}
+
+
+/* the h3 tag styles for the items container */
+
+.iName {
+    grid-area: "name";
+}
+
+
+/* the p tag styles for the item container */
+
+.disc {
+    grid-area: "words";
 }
 
 
@@ -70,6 +120,8 @@ main {
 }
 
 .hero-section {
+    background-image: url(/assets/RIA_FEATURE_79_B.jpg);
+    background-size: cover;
     height: 764px;
     width: 100%;
     background-color: #3ab0ff;
