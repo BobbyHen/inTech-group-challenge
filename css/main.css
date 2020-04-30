@@ -77,7 +77,7 @@
 /* the anchor tag styles for the items container */
 
 .ank {
-    grid-area: "myAnk myAnk";
+    grid-area: "myAnk";
 }
 
 
