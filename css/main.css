@@ -19,7 +19,8 @@
     display: grid;
     border: 10px solid green;
     grid-row-gap: 10px;
-    grid-template: 30px;
+    /*grid-template: 30px;*/
+    grid-template-areas: inherit;
 }
 
 .message {
@@ -31,23 +32,18 @@
 
 .top-sellers {
     grid-row-start: 3;
-    grid-row-end: 6;
+    grid-row-end: 36;
     display: grid;
 }
 
 .top-sellers>div {
+    grid-template-areas: 30px;
     text-align: right;
     grid-row: center;
 }
 
 
-/* the top 3 items 
-
-.items {
-    background-color: purple;
-}
-
-*/
+/* the top 3 items */
 
 #item1 {
     display: grid;
@@ -65,7 +61,7 @@
 
 #item3 {
     display: grid;
-    grid-template-areas: 'name name name name name' 'img img img words words' 'img img img words words' 'img img img myAnk myAnk';
+    grid-template-areas: '. name name name .' 'img img img words words' 'img img img words words' 'img img img myAnk myAnk';
     grid-column-start: 3;
     grid-column-end: 4;
 }
@@ -122,7 +118,7 @@ main {
 .hero-section {
     background-image: url(/assets/RIA_FEATURE_79_B.jpg);
     background-size: cover;
-    height: 764px;
+    height: 25em;
     width: 100%;
     background-color: #3ab0ff;
 }
