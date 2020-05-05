@@ -1,16 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,300&display=swap');
 
 /* CSS reset */
+
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
 
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
-
 
 .container {
     max-width: 2000px;
@@ -18,8 +18,48 @@ body {
     margin: auto;
 }
 
+.billboard {
+    display: grid;
+    border: 10px solid green;
+    grid-row-gap: 10px;
+    grid-template: 30px;
+}
+
+.message {
+    text-align: center;
+}
+
+.top-selling {
+    grid-row-start: 3;
+    grid-row-end: 6;
+    display: grid;
+}
+
+.top-selling>div {
+    text-align: center
+}
+
+.item1 {
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.item2 {
+    display: grid;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.item3 {
+    display: grid;
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
 
 /* navigation styling rules*/
+
 nav {
     width: 100%;
     min-height: 153px;
@@ -28,6 +68,7 @@ nav {
 
 
 /* main styling rules*/
+
 main {
     min-height: 100vh;
     width: 100%;
@@ -175,8 +216,6 @@ main {
     width: auto;
     margin: auto;
 }
-
-
 /* Slider Rules */
 
 .slider_container {
@@ -220,7 +259,6 @@ main {
         margin: 0 15px;
     }
 }
-
 
 /* footer styling rules */
 footer {
