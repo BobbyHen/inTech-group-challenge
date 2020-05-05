@@ -151,8 +151,7 @@
 .slick-next:hover,
 .slick-next:focus
 {
-    /* background-color: rgb(0, 84, 145);
-    transition: .5ms; */
+    cursor: pointer;
 }
 .slick-prev:hover:before,
 .slick-prev:focus:before,

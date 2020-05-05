@@ -129,7 +129,7 @@ main {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding: 25px 0;
+    padding: 40px 0;
 }
 
 .p_row_dark .product-more-info {
@@ -169,7 +169,12 @@ main {
     background-color: #F8F8F8;
 }
 
-
+.product-img {
+    height: 150px;
+    margin: 20px 0;
+    width: auto;
+    margin: auto;
+}
 
 
 /* Slider Rules */
@@ -220,7 +225,39 @@ main {
 /* footer styling rules */
 footer {
     background-color: #223643;
-    height: 400px;
+    height: auto;
     width: 100%;
     padding: 100px;
+}
+
+footer a,
+footer p,
+footer span {
+    color: #FFFF;
+    text-decoration: none;
+    line-height: 1.8em;
+    font-weight: 100;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-items: center;
+    max-width: 1000px;
+    height: auto;
+    margin: auto;
+    flex-flow: wrap;
+}
+
+.footer-header {
+    font-size: 1.5em;
+}
+
+.footer-logo {
+    width: 10em;
 }
