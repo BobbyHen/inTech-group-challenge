@@ -91,6 +91,97 @@ main {
     display: grid;
     grid-gap: 5px;
     grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(6,1fr);
+    grid-template-areas: 'name name'
+                         'words words'
+                         'img img'
+                         'img img' 
+                         'price price'
+                         'ank ank';
+}
+#item2{
+    /*futhere adjustments to grid needed :: make placement allignment dynamic. */
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(6,1fr);
+    grid-template-areas: 'name name'
+                         'words words'
+                         'img img'
+                         'img img' 
+                         'price price'
+                         'ank ank';
+}
+#item3{
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(6,1fr);
+    grid-template-areas: 'name name'
+                         'words words'
+                         'img img'
+                         'img img' 
+                         'price price'
+                         'ank ank';
+}
+/* dynamic sceen  hero section */
+@media screen and (min-width: 760px){
+    
+.hero-section {
+    background-image: url(/inTech-group-challenge/assets/RIA_FEATURE_79_B.jpg);
+    background-size: cover;
+    height: 27em;
+    width: 100%;
+    background-color: #3ab0ff;
+    border: 60px, orangered;
+}
+#message {
+    text-align: center;
+    color: white;
+    margin-bottom: 1em;
+}
+/* the board for the top selling items */
+
+.top-sellers {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-gap: 10px;
+}
+
+.top-sellers>div{
+    background-color: white;
+    border-style: ridge white;
+    border-radius: 10px;
+}
+/* elements within the items containers */
+
+.ank {
+    grid-area: ank;
+    margin: auto 5%
+}
+
+/* the image configurations */
+.top-product {
+    height: 200px;
+    width: auto;
+    grid-area: img;
+}
+
+.product_name {
+    grid-area: name;
+    text-align: center;
+    margin: auto 5%;
+}
+
+.disc {
+    grid-area: words;
+    margin: auto;
+}
+/* the top 3 items */
+#item1{
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(2,1fr);
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-areas: 'name name'
                          'img words'
@@ -117,6 +208,8 @@ main {
                          'img words'
                          'img price' 
                          'img ank';
+}
+
 }
 
 .product-section {
