@@ -101,22 +101,22 @@ main {
     /*futhere adjustments to grid needed :: make placement allignment dynamic. */
     display: grid;
     grid-gap: 5px;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(2,1fr);
     grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-areas: '. name name .'
-                         'img img words words' 
-                         'img img price price'
-                         'img img ank ank';
+    grid-template-areas: 'name name'
+                         'img words' 
+                         'img price'
+                         'img ank';
 }
 #item3{
     display: grid;
     grid-gap: 5px;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(2,1fr);
     grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-areas: '. name name .'
-                         'img img words words'
-                         'img img price price' 
-                         'img img ank ank';
+    grid-template-areas: 'name name'
+                         'img words'
+                         'img price' 
+                         'img ank';
 }
 
 .product-section {
