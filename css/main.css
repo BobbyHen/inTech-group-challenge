@@ -106,6 +106,7 @@ main {
     justify-items: baseline;
 }
 
+
 .product-contain {
     width: 100%;
     margin: 0 100px;
@@ -174,14 +175,14 @@ main {
 }
 
 .p_row_dark .product-more-info {
-    -webkit-clip-path: polygon(13% 0, 100% 0, 100% 100%, 0% 100%);
-    clip-path: polygon(13% 0, 100% 0, 100% 100%, 0% 100%);
+    -webkit-clip-path: polygon(25px 0, 100% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(30px 0, 100% 0, 100% 100%, 0% 100%);
     margin-left: 1%;
 }
 
 .p_row_light .product-more-info {
-    -webkit-clip-path: polygon(0 0, 86% 0, 100% 100%, 0% 100%);
-    clip-path: polygon(0 0, 86% 0, 100% 100%, 0% 100%);
+    -webkit-clip-path: polygon(0 0, 310px 0, 100% 100%, 0% 100%);
+    clip-path: polygon(0 0, 310px 0, 100% 100%, 0% 100%);
     margin-right: 1%;
 }
 
@@ -228,6 +229,12 @@ main {
     left: 50px;
 }
 
+.prod-page {
+    margin: auto;
+    width: 100%;
+
+}
+
 .items {
     padding: 0 90px;
 }
@@ -236,6 +243,7 @@ main {
     height: 388px;
     width: 400px;
 }
+
 
 .slider_container .product{
     margin: 25px 20px;
@@ -286,7 +294,7 @@ footer a:hover {
     flex-direction: row;
     justify-content: space-between;
     justify-items: center;
-    max-width: 1000px;
+    max-width: 750px;
     height: auto;
     margin: auto;
     flex-flow: wrap;
