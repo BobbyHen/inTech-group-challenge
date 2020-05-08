@@ -18,45 +18,6 @@ body {
     margin: auto;
 }
 
-.billboard {
-    display: grid;
-    border: 10px solid green;
-    grid-row-gap: 10px;
-    grid-template: 30px;
-}
-
-.message {
-    text-align: center;
-}
-
-.top-selling {
-    grid-row-start: 3;
-    grid-row-end: 6;
-    display: grid;
-}
-
-.top-selling>div {
-    text-align: center
-}
-
-.item1 {
-    display: grid;
-    grid-column-start: 1;
-    grid-column-end: 2;
-}
-
-.item2 {
-    display: grid;
-    grid-column-start: 2;
-    grid-column-end: 3;
-}
-
-.item3 {
-    display: grid;
-    grid-column-start: 3;
-    grid-column-end: 4;
-}
-
 
 /* navigation styling rules*/
 
@@ -76,9 +37,180 @@ main {
 }
 
 .hero-section {
-    height: 764px;
+    background-image: url("../assets/RIA_FEATURE_79_B.jpg");
+    background-position-x: center;
+    background-size: cover;
+    height: auto;
+    padding: 100px 10%;
     width: 100%;
-    background-color: #3ab0ff;
+}
+
+#message {
+    text-align: left;
+    color: white;
+    margin-bottom: 1em;
+    padding: 10px 10% 50px;
+}
+
+#message h1 {
+    font-size: 1.5em;
+}
+
+.hero-section h2 {
+    color: #FFFFFF;
+}
+
+/* the board for the top selling items */
+
+.top-sellers {
+    display: grid;
+    grid-template-columns: 33% 32% 32%;
+    grid-gap: 35px;
+}
+
+.top-sellers > div{
+    background-color: white;
+    border-radius: 10px;
+    height: auto;
+    
+}
+/* elements within the items containers */
+
+.ank {
+    grid-area: ank;
+    font-weight: 500;
+    color: #333;
+}
+
+
+/* the image configurations */
+.top-product {
+    height: 200px;
+    width: auto;
+    grid-area: img;
+}
+
+.product_name {
+    grid-area: name;
+    text-align: center;
+    margin: auto 5%;
+}
+
+.disc {
+    grid-area: words;
+    margin: auto;
+}
+/* the top 3 items */
+#item1{
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(6,1fr);
+    grid-template-areas: 'name name'
+                         'words words'
+                         'img img'
+                         'img img' 
+                         'price price'
+                         'ank ank';
+}
+#item2{
+    /*futhere adjustments to grid needed :: make placement allignment dynamic. */
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(6,1fr);
+    grid-template-areas: 'name name'
+                         'words words'
+                         'img img'
+                         'img img' 
+                         'price price'
+                         'ank ank';
+}
+#item3{
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(6,1fr);
+    grid-template-areas: 'name name'
+                         'words words'
+                         'img img'
+                         'img img' 
+                         'price price'
+                         'ank ank';
+}
+/* dynamic sceen  hero section */
+@media screen and (min-width: 760px){
+  
+    #message {
+        text-align: center;
+        color: white;
+        margin-bottom: 1em;
+    }
+    /* the board for the top selling items */
+
+
+    .top-sellers > div{
+        background-color: white;
+        border-style: ridge white;
+        border-radius: 10px;
+        padding: 20px 50px;
+    }
+    /* elements within the items containers */
+
+    .ank {
+        grid-area: ank;
+        margin: auto 5%
+    }
+
+    /* the image configurations */
+    .top-product {
+        height: 200px;
+        width: auto;
+        grid-area: img;
+    }
+
+    .product_name {
+        grid-area: name;
+        text-align: center;
+        margin: auto 5%;
+    }
+
+    .disc {
+        grid-area: words;
+        margin: auto;
+    }
+    /* the top 3 items */
+    #item1{
+        display: grid;
+        grid-gap: 5px;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 'name name'
+                            'img words'
+                            'img price' 
+                            'img ank';
+    }
+    #item2{
+        /*futhere adjustments to grid needed :: make placement allignment dynamic. */
+        display: grid;
+        grid-gap: 5px;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 'name name'
+                            'img words' 
+                            'img price'
+                            'img ank';
+    }
+    #item3{
+        display: grid;
+        grid-gap: 5px;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 'name name'
+                            'img words'
+                            'img price' 
+                            'img ank';
+    }
 }
 
 .product-section {
@@ -89,7 +221,7 @@ main {
     flex-direction: column;
 }
 
-.product-section h2 {
+.section-header {
     font-size: 3em;
     font-weight: 500;
     color: #333;
@@ -254,6 +386,7 @@ main {
 }
 
 .product-price {
+    grid-area: price;
     font-weight: 600;
     font-size: 2.5em;
     color: #1EA1BA;
