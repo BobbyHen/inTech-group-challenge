@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
     <title>PNWX Home Page</title>
 </head>
 
@@ -19,64 +20,285 @@
         <!-- Main content -->
         <main>
             <div class="hero-section">
+                
+                <div id="message">
+                    <h2> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores, voluptatem!</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium cupiditate omnis ab ipsam dolorum eius voluptatibus doloribus maiores iusto consequatur velit incidunt quidem neque eum quis dolorem, eaque harum debitis rem?
+                        Fugit odio dicta corporis!</p>
+                </div>
 
-                <div class="billboard">
 
+                <div class="top-sellers">
 
-                    <div class="message">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium cupiditate omnis ab ipsam dolorum eius voluptatibus doloribus maiores iusto consequatur velit incidunt quidem neque eum quis dolorem, eaque harum debitis rem?
-                            Fugit odio dicta corporis!</p>
+                    <div id="item1">
+
+                        <h3 class="product_name">Product name</h3>
+                        <img class="top-product" src="/inTech-group-challenge/assets/images/product_img/pngguru.com (4).png" alt="top selling item of the week" >
+                        <a class="ank" href="something">Go To Product.</a>
+                        <p class="disc">Lorem ipsum dolor sit, amet consectetur adipisicing elit..</p>
+                        <span class="product-price">$50,000.95</span>
                     </div>
+                    <div id="item2">
 
-
-                    <div class="top-sellers">
-
-                        <!-- should these be "id's" instead? -->
-                        <div id="item1">
-                            <h3 class="iName">Product name</h3>
-                            <!-- A top selling item-->
-                            <!--items image and brief description-->
-                            <img class="bImg" src="">
-                            <!--A link to purchase the item-->
-                            <a class="ank" href="something">Go To Product.</a>
-                            <p class="disc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro, id.</p>
-                        </div>
-
-                        <div id="item2">
-                            <h3 class="iName">Product name</h3>
-                            <!-- A top selling item-->
-                            <!--items image and brief description-->
-                            <img class="bImg" src="">
-                            <!--A link to purchase the item-->
-                            <a class="ank" href="something">Go To Product.</a>
-                            <p class="disc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro, id.</p>
-                        </div>
-
-                        <div id="item3">
-                            <h3 class="iName">Product name</h3>
-                            <!-- A top selling item-->
-                            <!--items image and brief description-->
-                            <img class="bImg" src="">
-                            <!--A link to purchase the item-->
-                            <a class="ank" href="something">Go To Product.</a>
-                            <p class="disc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro, id.</p>
-                        </div>
-
+                        <h3 class="product_name">Product name</h3>
+                        <img class="top-product" src="/inTech-group-challenge/assets/images/product_img/pngguru.com (3).png" alt="top selling item of the week" >
+                        <a class="ank" href="something">Go To Product.</a>
+                        <p class="disc">Lorem ipsum dolor sit, amet consectetur adipisicing elit..</p>
+                        <span class="product-price">$2500.95</span>
                     </div>
+                    <div id="item3">
 
+                        <h3 class="product_name">Product name</h3>
+                        <img class="top-product" src="/inTech-group-challenge/assets/images/product_img/pngguru.com (7).png" alt="top selling item of the week" >
+                        <a class="ank" href="something">Go To Product.</a>
+                        <p class="disc">Lorem ipsum dolor sit, amet consectetur adipisicing elit..</p>
+                        <span class="product-price">$5,500.99</span>
+                    </div>
                 </div>
 
             </div>
-
+            
             <div class="product-section">
+                    <h2>Our Products</h2>
+                <!-- First row -->
+                 <div class="product-rows p_row_dark">
+                    <div class="slider_container">
+                        <div class="items multiple-items">
+                            <div class="product">
+                                <p style="text-align: left"><strong>Lorem ipsum, dolor sit tur adipisicing elit. Nobis quo illo </strong> </p>
+                                <img class="product-img" src="assets/images/product_img/pngguru.com (2).png" alt="product-image">
+                                <a href="#">Go to product</a>
+                                <span class="product-price">$105.95</span>
+                            </div>
+                            <div class="product">
+                                <p style="text-align: left"><strong>Lorem ipsum, dolor ectetur adipisicing elit. Nobis quo illo </strong> </p>
+                                <img class="product-img" src="assets/images/product_img/pngguru.com (3).png" alt="product-image">
+                                <a href="#">Go to product</a>
+                                <span class="product-price">$2500.95</span>
+                            </div>
+                            <div class="product">
+                                <p style="text-align: left"><strong>Lorem ipsum, doonsectetucing elit. Nobis quo illo </strong> </p>
+                                <img class="product-img" src="assets/images/product_img/pngguru.com (4).png" alt="product-image">
+                                <a href="#">Go to product</a>
+                                <span class="product-price">$50,000.95</span>
+                            </div>
+                            <div class="product">
+                                <p style="text-align: left"><strong>Lorem ipsum, doloronsectetur adipisicing elit. Nobis quo illo </strong> </p>
+                                <img class="product-img" src="assets/images/product_img/pngguru.com (7).png" alt="product-image">
+                                <a href="#">Go to product</a>
+                                <span class="product-price">$5,500.99</span>
+                            </div>
+                            <div class="product">
+                                <p style="text-align: left"><strong>Lorem ipsum, dolor sit acing elit. Nobis quo illo </strong> </p>
+                                <img class="product-img" src="assets/images/product_img/pngguru.com (2).png" alt="product-image">
+                                <a href="#">Go to product</a>
+                                <span class="product-price">$105.95</span>
+                            </div>
+                            <div class="product">
+                                <p style="text-align: left"><strong>Lorem ipsum, dolor sit amer adipisicing elit. Nobis quo illo </strong> </p>
+                                <img class="product-img" src="assets/images/product_img/pngguru.com (3).png" alt="product-image">
+                                <a href="#">Go to product</a>
+                                <span class="product-price">$2500.95</span>
+                            </div>
+                            <div class="product">
+                                <p style="text-align: left"><strong>Lorem ipsum, dolor sit amet coicing elit. Nobis quo illo </strong> </p>
+                                <img class="product-img" src="assets/images/product_img/pngguru.com (4).png" alt="product-image">
+                                <a href="#">Go to product</a>
+                                <span class="product-price">$50,000.95</s>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-more-info color-1">
+                        <span class="product-type-label">Equipment</span>
+                        <a class="product-type-btn" href="#">View More</a>
+                    </div>
+                </div>
+                              <!-- Second row -->
+                <div class="product-rows p_row_light">
+                    <div class="slider_container">
+                        <div class="items multiple-items">
+                            <div class="product">
+                                <p style="text-align: left"><strong>Lorem ipsum, dolor sit tur adipisicing elit. Nobis quo illo </strong> </p>
+                                <img class="product-img" src="assets/images/product_img/pngguru.com (2).png" alt="product-image">
+                                <a href="#">Go to product</a>
+                                <span class="product-price">$105.95</span>
+                            </div>
+                            <div class="product">
+                                <p style="text-align: left"><strong>Lorem ipsum, dolor ectetur adipisicing elit. Nobis quo illo </strong> </p>
+                                <img class="product-img" src="assets/images/product_img/pngguru.com (3).png" alt="product-image">
+                                <a href="#">Go to product</a>
+                                <span class="product-price">$2500.95</span>
+                            </div>
+                            <div class="product">
+                                <p style="text-align: left"><strong>Lorem ipsum, doonsectetucing elit. Nobis quo illo </strong> </p>
+                                <img class="product-img" src="assets/images/product_img/pngguru.com (4).png" alt="product-image">
+                                <a href="#">Go to product</a>
+                                <span class="product-price">$50,000.95</span>
+                            </div>
+                            <div class="product">
+                                <p style="text-align: left"><strong>Lorem ipsum, doloronsectetur adipisicing elit. Nobis quo illo </strong> </p>
+                                <img class="product-img" src="assets/images/product_img/pngguru.com (7).png" alt="product-image">
+                                <a href="#">Go to product</a>
+                                <span class="product-price">$5,500.99</span>
+                            </div>
+                            <div class="product">
+                                <p style="text-align: left"><strong>Lorem ipsum, dolor sit acing elit. Nobis quo illo </strong> </p>
+                                <img class="product-img" src="assets/images/product_img/pngguru.com (2).png" alt="product-image">
+                                <a href="#">Go to product</a>
+                                <span class="product-price">$105.95</span>
+                            </div>
+                            <div class="product">
+                                <p style="text-align: left"><strong>Lorem ipsum, dolor sit amer adipisicing elit. Nobis quo illo </strong> </p>
+                                <img class="product-img" src="assets/images/product_img/pngguru.com (3).png" alt="product-image">
+                                <a href="#">Go to product</a>
+                                <span class="product-price">$2500.95</span>
+                            </div>
+                            <div class="product">
+                                <p style="text-align: left"><strong>Lorem ipsum, dolor sit amet coicing elit. Nobis quo illo </strong> </p>
+                                <img class="product-img" src="assets/images/product_img/pngguru.com (4).png" alt="product-image">
+                                <a href="#">Go to product</a>
+                                <span class="product-price">$50,000.95</s>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-more-info color-2">
+                        <span class="product-type-label">Accessories</span>
+                        <a class="product-type-btn" href="#">View More</a>
+                    </div>
+                </div>
+                
 
+                <!-- Third row -->
+                 <div class="product-rows p_row_dark">
+                    <div class="slider_container">
+                        <div class="items multiple-items">
+                            <div class="product">
+                                <p style="text-align: left"><strong>Lorem ipsum, dolor sit tur adipisicing elit. Nobis quo illo </strong> </p>
+                                <img class="product-img" src="assets/images/product_img/pngguru.com (2).png" alt="product-image">
+                                <a href="#">Go to product</a>
+                                <span class="product-price">$105.95</span>
+                            </div>
+                            <div class="product">
+                                <p style="text-align: left"><strong>Lorem ipsum, dolor ectetur adipisicing elit. Nobis quo illo </strong> </p>
+                                <img class="product-img" src="assets/images/product_img/pngguru.com (3).png" alt="product-image">
+                                <a href="#">Go to product</a>
+                                <span class="product-price">$2500.95</span>
+                            </div>
+                            <div class="product">
+                                <p style="text-align: left"><strong>Lorem ipsum, doonsectetucing elit. Nobis quo illo </strong> </p>
+                                <img class="product-img" src="assets/images/product_img/pngguru.com (4).png" alt="product-image">
+                                <a href="#">Go to product</a>
+                                <span class="product-price">$50,000.95</span>
+                            </div>
+                            <div class="product">
+                                <p style="text-align: left"><strong>Lorem ipsum, doloronsectetur adipisicing elit. Nobis quo illo </strong> </p>
+                                <img class="product-img" src="assets/images/product_img/pngguru.com (7).png" alt="product-image">
+                                <a href="#">Go to product</a>
+                                <span class="product-price">$5,500.99</span>
+                            </div>
+                            <div class="product">
+                                <p style="text-align: left"><strong>Lorem ipsum, dolor sit acing elit. Nobis quo illo </strong> </p>
+                                <img class="product-img" src="assets/images/product_img/pngguru.com (2).png" alt="product-image">
+                                <a href="#">Go to product</a>
+                                <span class="product-price">$105.95</span>
+                            </div>
+                            <div class="product">
+                                <p style="text-align: left"><strong>Lorem ipsum, dolor sit amer adipisicing elit. Nobis quo illo </strong> </p>
+                                <img class="product-img" src="assets/images/product_img/pngguru.com (3).png" alt="product-image">
+                                <a href="#">Go to product</a>
+                                <span class="product-price">$2500.95</span>
+                            </div>
+                            <div class="product">
+                                <p style="text-align: left"><strong>Lorem ipsum, dolor sit amet coicing elit. Nobis quo illo </strong> </p>
+                                <img class="product-img" src="assets/images/product_img/pngguru.com (4).png" alt="product-image">
+                                <a href="#">Go to product</a>
+                                <span class="product-price">$50,000.95</s>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-more-info color-3">
+                        <span class="product-type-label">Supplies</span>
+                        <a class="product-type-btn" href="#">View More</a>
+                    </div>
+                </div>
+
+                <!-- Fourth row row -->
+                <div class="product-rows p_row_light">
+                    <div class="slider_container">
+                        <div class="items multiple-items">
+                            <div class="product">
+                                <p style="text-align: left"><strong>Lorem ipsum, dolor sit tur adipisicing elit. Nobis quo illo </strong> </p>
+                                <img class="product-img" src="assets/images/product_img/pngguru.com (2).png" alt="product-image">
+                                <a href="#">Go to product</a>
+                                <span class="product-price">$105.95</span>
+                            </div>
+                            <div class="product">
+                                <p style="text-align: left"><strong>Lorem ipsum, dolor ectetur adipisicing elit. Nobis quo illo </strong> </p>
+                                <img class="product-img" src="assets/images/product_img/pngguru.com (3).png" alt="product-image">
+                                <a href="#">Go to product</a>
+                                <span class="product-price">$2500.95</span>
+                            </div>
+                            <div class="product">
+                                <p style="text-align: left"><strong>Lorem ipsum, doonsectetucing elit. Nobis quo illo </strong> </p>
+                                <img class="product-img" src="assets/images/product_img/pngguru.com (4).png" alt="product-image">
+                                <a href="#">Go to product</a>
+                                <span class="product-price">$50,000.95</span>
+                            </div>
+                            <div class="product">
+                                <p style="text-align: left"><strong>Lorem ipsum, doloronsectetur adipisicing elit. Nobis quo illo </strong> </p>
+                                <img class="product-img" src="assets/images/product_img/pngguru.com (7).png" alt="product-image">
+                                <a href="#">Go to product</a>
+                                <span class="product-price">$5,500.99</span>
+                            </div>
+                            <div class="product">
+                                <p style="text-align: left"><strong>Lorem ipsum, dolor sit acing elit. Nobis quo illo </strong> </p>
+                                <img class="product-img" src="assets/images/product_img/pngguru.com (2).png" alt="product-image">
+                                <a href="#">Go to product</a>
+                                <span class="product-price">$105.95</span>
+                            </div>
+                            <div class="product">
+                                <p style="text-align: left"><strong>Lorem ipsum, dolor sit amer adipisicing elit. Nobis quo illo </strong> </p>
+                                <img class="product-img" src="assets/images/product_img/pngguru.com (3).png" alt="product-image">
+                                <a href="#">Go to product</a>
+                                <span class="product-price">$2500.95</span>
+                            </div>
+                            <div class="product">
+                                <p style="text-align: left"><strong>Lorem ipsum, dolor sit amet coicing elit. Nobis quo illo </strong> </p>
+                                <img class="product-img" src="assets/images/product_img/pngguru.com (4).png" alt="product-image">
+                                <a href="#">Go to product</a>
+                                <span class="product-price">$50,000.95</s>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-more-info color-4">
+                        <span class="product-type-label">Parts</span>
+                        <a class="product-type-btn" href="#">View More</a>
+                    </div>
+        
             </div>
         </main>
-        <!-- Footer content goes here -->
-        <footer>
-
-        </footer>
     </div>
+    <!-- Footer content goes here -->
+    <footer>
+        <div class="footer-content">
+            <img class="footer-logo" src="assets/images/logo-footer.svg" alt="footer logo">
+            <p>
+                <span class="footer-header" >Contact</span> <br>
+                P.O. Box 625 * Gresham, OR 97030 U.S.A. <br>
+                Toll Free U.S.A. : 800-827-XRAY (800-827-9729) <br>
+                Outside U.S.A. : 1-503-667-3000 <br>
+                Fax :	1-503-666-8855
+            </p>
+            <p>
+                <span class="footer-header" >Legal</span> <br>
+                <a href="#">Legal</a> <br>
+                <a href="#">Privacy</a>
+            </p>
+        </div>
+    </footer>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
