@@ -18,45 +18,6 @@ body {
     margin: auto;
 }
 
-.billboard {
-    display: grid;
-    border: 10px solid green;
-    grid-row-gap: 10px;
-    grid-template: 30px;
-}
-
-.message {
-    text-align: center;
-}
-
-.top-selling {
-    grid-row-start: 3;
-    grid-row-end: 6;
-    display: grid;
-}
-
-.top-selling>div {
-    text-align: center
-}
-
-.item1 {
-    display: grid;
-    grid-column-start: 1;
-    grid-column-end: 2;
-}
-
-.item2 {
-    display: grid;
-    grid-column-start: 2;
-    grid-column-end: 3;
-}
-
-.item3 {
-    display: grid;
-    grid-column-start: 3;
-    grid-column-end: 4;
-}
-
 
 /* navigation styling rules*/
 
@@ -65,46 +26,33 @@ nav {
     min-height: 153px;
     border: dashed 3px red;
     display: flex;
-    
 }
 
 .logo {
-
     width: 150px;
     height: auto;
-    
-
 }
 
 .navlinks{
-
     display: flex;
     flex-direction: row;
     justify-content: center;
     list-style-type: none;
     padding-top: 3%;
-
-   
-    
 }
 
 .navlinks li {
-
     margin: 0 10px;
-
 }
 
 .navlinks a{
-
     text-decoration: none;
     color: #526a89;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    
 }
 
 .bluebar{
-
     color: #F8F8F8;
     background-color: #007ecc;
     height: 60px;
@@ -114,15 +62,12 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    
 }
 
 .bluebar input, p, button{
-
     margin: 20px 5px;
     font-size: 17px;
     border: none;
-
 }
 
 /* .bluebar input [type=text]{
@@ -134,18 +79,12 @@ nav {
 } */
 
 .columnright{
-
     width: 100%;
-    
 }
 
 .columnleft{
-
     margin: 20px 20px;
-
 }
-
-
 
 
 /* main styling rules*/
@@ -157,9 +96,180 @@ main {
 }
 
 .hero-section {
-    height: 764px;
+    background-image: url(/inTech-group-challenge/assets/RIA_FEATURE_79_B.jpg);
+    background-size: cover;
+    height: 27em;
     width: 100%;
     background-color: #3ab0ff;
+    border: 60px, orangered;
+}
+#message {
+    text-align: center;
+    color: white;
+    margin-bottom: 1em;
+}
+/* the board for the top selling items */
+
+.top-sellers {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-gap: 10px;
+}
+
+.top-sellers>div{
+    background-color: white;
+    border-style: ridge white;
+    border-radius: 10px;
+}
+/* elements within the items containers */
+
+.ank {
+    grid-area: ank;
+    margin: auto 5%
+}
+
+/* the image configurations */
+.top-product {
+    height: 200px;
+    width: auto;
+    grid-area: img;
+}
+
+.product_name {
+    grid-area: name;
+    text-align: center;
+    margin: auto 5%;
+}
+
+.disc {
+    grid-area: words;
+    margin: auto;
+}
+/* the top 3 items */
+#item1{
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(6,1fr);
+    grid-template-areas: 'name name'
+                         'words words'
+                         'img img'
+                         'img img' 
+                         'price price'
+                         'ank ank';
+}
+#item2{
+    /*futhere adjustments to grid needed :: make placement allignment dynamic. */
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(6,1fr);
+    grid-template-areas: 'name name'
+                         'words words'
+                         'img img'
+                         'img img' 
+                         'price price'
+                         'ank ank';
+}
+#item3{
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(6,1fr);
+    grid-template-areas: 'name name'
+                         'words words'
+                         'img img'
+                         'img img' 
+                         'price price'
+                         'ank ank';
+}
+/* dynamic sceen  hero section */
+@media screen and (min-width: 760px){
+    
+.hero-section {
+    background-image: url(/inTech-group-challenge/assets/RIA_FEATURE_79_B.jpg);
+    background-size: cover;
+    height: 27em;
+    width: 100%;
+    background-color: #3ab0ff;
+    border: 60px, orangered;
+}
+#message {
+    text-align: center;
+    color: white;
+    margin-bottom: 1em;
+}
+/* the board for the top selling items */
+
+.top-sellers {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-gap: 10px;
+}
+
+.top-sellers>div{
+    background-color: white;
+    border-style: ridge white;
+    border-radius: 10px;
+}
+  
+/* elements within the items containers */
+.ank {
+    grid-area: ank;
+    margin: auto 5%
+}
+
+/* the image configurations */
+.top-product {
+    height: 200px;
+    width: auto;
+    grid-area: img;
+}
+
+.product_name {
+    grid-area: name;
+    text-align: center;
+    margin: auto 5%;
+}
+
+.disc {
+    grid-area: words;
+    margin: auto;
+}
+  
+/* the top 3 items */
+#item1{
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 'name name'
+                         'img words'
+                         'img price' 
+                         'img ank';
+}
+#item2{
+    /*futhere adjustments to grid needed :: make placement allignment dynamic. */
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 'name name'
+                         'img words' 
+                         'img price'
+                         'img ank';
+}
+#item3{
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 'name name'
+                         'img words'
+                         'img price' 
+                         'img ank';
+}
+
 }
 
 .product-section {
@@ -327,6 +437,7 @@ main {
 }
 
 .product-price {
+    grid-area: price;
     font-weight: 600;
     font-size: 2.5em;
     color: #1EA1BA;
