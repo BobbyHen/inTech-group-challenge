@@ -53,12 +53,14 @@ main {
 
 .top-sellers {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 30% 30% 30%;
     grid-gap: 10px;
 }
 
 .top-sellers>div{
-    border-style: ridge;
+    background-color: white;
+    border-style: ridge white;
+    border-radius: 10px;
 }
 /* elements within the items containers */
 
@@ -67,8 +69,9 @@ main {
     margin: auto 5%
 }
 
+/* the image configurations */
 .top-product {
-    height: 250px;
+    height: 200px;
     width: auto;
     grid-area: img;
 }
